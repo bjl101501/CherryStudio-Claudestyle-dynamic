@@ -197,12 +197,12 @@ body[theme-mode='dark'] #inputbar:focus-within {
 .ant-btn-primary {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary) !important;
-    color: #FFFFFF !important;
+    color: #f2f2f2 !important; /* #FFFFFF */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .ant-btn-primary:hover, .ant-btn-primary:focus {
-    background-color: var(--color-primary-soft) !important;
+    background-color: var(--color-primary) !important;
     border-color: var(--color-primary-soft) !important;
     color: #FFFFFF !important;
     transform: translateY(-1px); /* 悬停时轻微上移 */
