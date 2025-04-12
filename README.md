@@ -54,7 +54,7 @@ pre *, code *, kbd, samp, tt {
 .markdown * code {
 	color: rgb(203,64,66);
 	font-family: "Maple Mono NL CN", monospace !important;
-	font-size: 12px
+	font-size: 12px;
 }
 
 /* 浅色模式颜色定义 - 采用Claude的色调 */
