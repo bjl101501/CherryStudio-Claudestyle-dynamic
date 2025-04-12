@@ -1,14 +1,4 @@
-# CherryStudio-Claude-Dynamic-style
-使用CherryStudio知识库，由grok3 生成的仿Claude样式主题，添加动态交互效果。
 
-![1744352213936](https://github.com/user-attachments/assets/421826f7-7e59-4c5d-8e7c-009983022871)
-
->引用：  
->吉伊卡哇[吉伊卡哇](https://cherry-ai.com/css)  
->忘了从哪里找的Claude风格  
->霞鹜文楷 GB 屏幕阅读版-GitHub  
->Maple Mono NL CN-GitHub  
----
 ## grok-3-beta | Grok
 作为一名专业的前端工程师，我将根据您的请求，在仿Claude风格主题的基础上适当添加一些动态效果，以提升用户体验和交互性。参考材料中提供了部分Ant Design组件的交互样式（如悬停和激活状态），我将结合这些内容并基于之前的`CherryStudio-Claude CSS`主题代码，添加合适的动态效果。以下是详细的设计方案，结构清晰，并附上必要的代码和说明。
 
