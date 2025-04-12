@@ -16,6 +16,8 @@
 
 ## 示例  
 
+### 修改头像背景  
+
 我的头像是黑白，在深色模式下啥也看不见   
 
 ![image](https://github.com/user-attachments/assets/ba4c0262-e66f-4fd0-ac1d-7f242940293c)  
@@ -50,8 +52,23 @@
     
   ```
 
-### 搞定
+#### 搞定
 
-![image](https://github.com/user-attachments/assets/12da4d04-3f93-42e7-ba7f-985ff7ea85d5)
+![image](https://github.com/user-attachments/assets/12da4d04-3f93-42e7-ba7f-985ff7ea85d5)  
+
+
+### 删除开始新对话
+
+![image](https://github.com/user-attachments/assets/e6925daf-54f0-4a3a-a195-1a5ce751d460)
+
+原理同上，选择开始新对话，直接修改  
+
+![image](https://github.com/user-attachments/assets/85a6317d-482c-4424-b02c-40efb3293afa)
+
+```CSS
+.kwIEiN {  
+  display: none;  
+}  
+```
 
   
