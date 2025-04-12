@@ -1,27 +1,36 @@
+# CherryStudio Claude Dynamic style
+使用CherryStudio知识库，由grok3 生成的仿Claude样式主题，添加动态交互效果。
 
-## grok-3-beta | Grok
-作为一名专业的前端工程师，我将根据您的请求，在仿Claude风格主题的基础上适当添加一些动态效果，以提升用户体验和交互性。参考材料中提供了部分Ant Design组件的交互样式（如悬停和激活状态），我将结合这些内容并基于之前的`CherryStudio-Claude CSS`主题代码，添加合适的动态效果。以下是详细的设计方案，结构清晰，并附上必要的代码和说明。
+![image](https://github.com/user-attachments/assets/167aa91c-c0ed-4b50-9157-0ffd0fa6efb2)
 
+![image](https://github.com/user-attachments/assets/122c55e0-7d60-4c1f-9a9e-a76c4c0066c6)
+
+
+### 参考：  
+>吉伊卡哇[吉伊卡哇](https://cherry-ai.com/css)  
+>忘了从哪里找的Claude风格  
+>霞鹜文楷 GB 屏幕阅读版-[GitHub](https://github.com/lxgw/LxgwWenKai-Screen)  
+>Maple Mono NL CN-[GitHub](https://github.com/subframe7536/maple-font)  
 ---
 
-### 添加动态效果的设计方案
+[原始聊天文档](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/chat.md)  
+[零基础简易修改主题方法](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/dev.md)  
 
-动态效果可以增强用户交互体验，但应避免过度使用以保持Claude风格的简洁和现代感。目标是添加自然、流畅的动画效果，主要集中在按钮、输入框、消息容器等关键交互元素上，同时参考材料中的悬停和激活效果也将被整合到设计中。
+### 相比原始文档：
+- 修改按钮悬浮样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
+    ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
 
----
-
-#### 设计目标
-1. **自然过渡**：为交互元素添加平滑的颜色、阴影和缩放过渡效果。
-2. **交互反馈**：增强悬停（hover）、点击（active）和焦点（focus）状态的视觉反馈。
-3. **一致性**：确保动态效果与Claude风格的简约设计相符，避免过于花哨。
-4. **性能优化**：使用轻量级的CSS动画，避免影响页面加载和渲染速度。
-
----
-
-#### 优化后的主题代码（包含动态效果）
-
-以下是基于之前提供的`CherryStudio-Claude CSS`主题代码，添加动态效果后的CSS实现。动态效果主要集中在消息容器、输入框和Ant Design组件上，同时参考了材料中的交互样式。
-
+- 修改行内代码样式  
+    ```
+    .markdown * code {
+    	color: rgb(203,64,66);
+    	font-family: "Maple Mono NL CN", monospace !important;
+    	font-size: 12px
+    }
+    ```
+    ![image](https://github.com/user-attachments/assets/717016a7-7d54-460b-a3cf-8250faff42d1)
+---  
+### CSS  
 ```css
 /* ======================== 全局主题变量定义 ======================== */
 :root {
@@ -40,6 +49,12 @@
 /* 确保代码块内的文本使用正确字体 */
 pre *, code *, kbd, samp, tt {
     font-family: "Maple Mono NL CN", monospace !important;
+}
+
+.markdown * code {
+	color: rgb(203,64,66);
+	font-family: "Maple Mono NL CN", monospace !important;
+	font-size: 12px
 }
 
 /* 浅色模式颜色定义 - 采用Claude的色调 */
@@ -187,7 +202,7 @@ body[theme-mode='dark'] #inputbar:focus-within {
 .ant-btn-primary {
     background-color: var(--color-primary) !important;
     border-color: var(--color-primary) !important;
-    color: #f2f2f2 !important; /* #FFFFFF */
+    color: #f2f2f2 !important;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -250,30 +265,3 @@ body[theme-mode='dark'] #inputbar:focus-within {
     transform: scale(1.1); /* 悬停或焦点时放大 */
 }
 ```
-
----
-
-#### 动态效果说明
-1. **消息容器动态效果**：为`.message-content-container`添加了`fadeIn`动画效果，使其在加载时逐渐显现，同时在悬停时添加轻微上移和阴影效果，增强交互感。
-2. **输入框动态效果**：增强了`#inputbar`的悬停和焦点效果，包括缩放、阴影和边框颜色变化，提供更明显的视觉反馈。
-3. **按钮动态效果**：为`.ant-btn-primary`和`.ant-btn-variant-outlined`添加了上移（hover）、下沉（active）和阴影变化效果，参考了材料中的按钮交互样式[^1].
-4. **选项卡和滑块动态效果**：为`.ant-tabs-tab`添加悬停时的轻微上移效果，为滑块（`.ant-slider`）添加颜色和缩放过渡效果，参考了材料中的滑块样式[^2].
-5. **性能考虑**：所有过渡效果使用`ease`或`cubic-bezier`曲线，确保动画流畅，同时避免对不必要的属性（如`opacity`）过度使用动画以减少性能负担。
-
----
-
-#### 性能与兼容性建议
-- **性能优化**：动态效果主要使用CSS`transition`和`animation`，对性能影响较小，但建议在低性能设备上限制动画范围（如禁用`transform`效果）。
-- **浏览器兼容性**：`backdrop-filter`和某些`transition`属性可能在旧版浏览器中不完全支持，建议为关键效果（如输入框背景）提供备用样式。
-- **用户体验**：动态效果的持续时间（如`0.3s`）和幅度（如`translateY(-1px)`）保持微小，确保不干扰用户操作。
-
----
-
-#### 总结
-以上代码在仿Claude风格主题的基础上，适当添加了动态效果，包括消息容器的淡入动画、输入框的焦点反馈、按钮的悬停和点击效果，以及选项卡和滑块的交互样式。这些效果增强了用户体验，同时保持了Claude风格的简约和现代感。如果您希望调整动画的强度或添加其他动态效果，我可以进一步优化。
-
----
-
-#### 脚注
-[^1]: 按钮的悬停和激活效果参考了参考材料ID 3和ID 6，确保交互反馈自然。
-[^2]: 滑块的动态效果基于参考材料ID 1和ID 4，添加了颜色和缩放过渡。
