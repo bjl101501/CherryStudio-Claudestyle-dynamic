@@ -20,6 +20,17 @@
 - 修改按钮悬浮样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
     ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
 
+- 隐藏开始新对话  
+  版本v1.2.3 pre，其他版本不一定生效
+  
+  ```
+  .kwIEiN {   
+  display: none;    
+  }    
+  ```
+  ![image](https://github.com/user-attachments/assets/1d30bd55-60a0-4b2a-9cea-0b6c2ed585a6)  
+
+  
 - 修改行内代码样式  
     ```
     .markdown * code {
