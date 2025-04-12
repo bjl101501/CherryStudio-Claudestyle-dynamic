@@ -68,6 +68,11 @@ pre *, code *, kbd, samp, tt {
 	font-size: 12px;
 }
 
+/* 隐藏开始新对话 */
+.kwIEiN {   
+display: none;    
+}
+
 /* 浅色模式颜色定义 - 采用Claude的色调 */
 body[theme-mode='light'] {
     --color-primary: #C96442;
