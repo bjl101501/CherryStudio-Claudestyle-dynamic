@@ -1,5 +1,5 @@
 # CherryStudio Claude Dynamic style
-使用CherryStudio知识库，由grok3 生成的仿Claude样式主题，添加动态交互效果。
+使用CherryStudio知识库，由grok3 生成的仿Claude样式主题，添加动态交互效果。*仅测试Windows
 
 ![image](https://github.com/user-attachments/assets/167aa91c-c0ed-4b50-9157-0ffd0fa6efb2)
 
