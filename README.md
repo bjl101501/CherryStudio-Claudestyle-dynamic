@@ -17,7 +17,7 @@
 [零基础简易修改主题方法](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/dev.md)  
 
 ### 相比原始文档：
-- 修改按钮悬浮样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
+- 修改按钮悬停样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
     ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
 
 - 隐藏开始新对话  
