@@ -26,7 +26,7 @@
   
   ```
   .kwIEiN {   
-  display: none;    
+      display: none;    
   }    
   ```
   ![image](https://github.com/user-attachments/assets/1d30bd55-60a0-4b2a-9cea-0b6c2ed585a6)  
@@ -71,7 +71,7 @@ pre *, code *, kbd, samp, tt {
 
 /* 隐藏开始新对话 */
 .kwIEiN {   
-display: none;    
+    display: none;    
 }
 
 /* 浅色模式颜色定义 - 采用Claude的色调 */
@@ -106,8 +106,8 @@ body[theme-mode='dark'] {
     --chat-background-user: #141413;   /* 用户消息背景 */
     --chat-background-assistant: #262624; /* AI助手消息背景 */
     --color-border: rgba(239, 239, 241, 0.15); /* 边框颜色 */
-    --chat-text-user: #F5F4ED;         /* 用户消息文字颜色 */
-    --color-text: #F5F4ED;             /* 全局文字颜色 */
+    --chat-text-user: #e8e6de;         /* 用户消息文字颜色 */
+    --color-text: #bdbcb8;             /* 全局文字颜色 */
 }
 
 /* Claude 样式的消息容器 - 添加动态效果 */
@@ -120,6 +120,10 @@ body[theme-mode='dark'] {
     box-shadow: none !important;
     opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
+}
+
+body[theme-mode='dark'] .markdown {
+    color:  var(--chat-text-user) !important;
 }
 
 .message-content-container:hover {
@@ -149,7 +153,7 @@ body[theme-mode='dark'] {
 body[theme-mode='dark'] .message-content-container {
     background: var(--chat-background-assistant) !important;
     box-shadow: none !important;
-    border: none !important;
+    border: 1px solid var(--color-border) !important;
 }
 
 body[theme-mode='dark'] .message-content-container:hover {
