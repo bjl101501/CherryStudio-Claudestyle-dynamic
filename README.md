@@ -16,7 +16,7 @@
 [原始聊天文档](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/chat.md)  
 [零基础简易修改主题方法](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/dev.md)  
 
-### 相比原始文档：
+### 相比原始聊天文档：
 - 修改按钮悬停样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
   
     ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
@@ -40,7 +40,12 @@
     	font-size: 12px
     }
     ```
-    ![image](https://github.com/user-attachments/assets/717016a7-7d54-460b-a3cf-8250faff42d1)
+    ![image](https://github.com/user-attachments/assets/717016a7-7d54-460b-a3cf-8250faff42d1)  
+- 修改深色模式字体颜色
+- 修改输入框边框变色
+  
+  
+
 ---  
 ### CSS  
 ```css
@@ -174,7 +179,7 @@ body[theme-mode='dark'] .message-user .message-content-container:hover {
 #inputbar {
     margin: 0px 10px 10px 10px;
     background: #FFFFFF !important; /* 纯白色输入框背景 */
-    border: 2px solid var(--color-border) !important;
+    border: 1px solid var(--color-border) !important;
     border-radius: 20px !important;
     box-shadow: 0 8px 32px -12px rgba(0,0,0,0.03) !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -183,12 +188,14 @@ body[theme-mode='dark'] .message-user .message-content-container:hover {
 #inputbar:hover {
     transform: scale(1.02); /* 悬停时缩放 */
     box-shadow: 0 12px 40px -10px rgba(255, 107, 107, 0.1); /* 增强阴影 */
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
     border-color: var(--color-primary-mute); /* 边框颜色微变 */
 }
 
 #inputbar:focus-within {
     transform: scale(1.01); /* 焦点时略微缩放 */
     box-shadow: 0 8px 24px -8px rgba(201, 100, 66, 0.15); /* 焦点时阴影增强 */
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
     border-color: var(--color-primary-soft); /* 边框颜色变化 */
 }
 
@@ -202,12 +209,14 @@ body[theme-mode='dark'] #inputbar {
 body[theme-mode='dark'] #inputbar:hover {
     transform: scale(1.02);
     box-shadow: 0 12px 40px -10px rgba(255, 107, 107, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
     border-color: var(--color-primary-mute);
 }
 
 body[theme-mode='dark'] #inputbar:focus-within {
     transform: scale(1.01);
     box-shadow: 0 8px 24px -8px rgba(201, 100, 66, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
     border-color: var(--color-primary-soft);
 }
 
@@ -217,7 +226,11 @@ body[theme-mode='dark'] #inputbar:focus-within {
     transform: scale(1.1); /* 悬停时轻微放大 */
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
+.GCzWs :hover {
+    background-color: var(--color-background-soft);
+    transform: scale(1.1); /* 悬停时轻微放大 */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
 /* ======================== Ant Design 组件样式调整 - 添加动态效果 ======================== */
 /* 按钮样式 */
 .ant-btn-primary {
