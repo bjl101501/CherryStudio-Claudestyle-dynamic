@@ -225,7 +225,7 @@ body[theme-mode='dark'] #inputbar:focus-within {
     transform: scale(1.1); /* 悬停时轻微放大 */
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
-.GCzWs :hover {
+.GCzWs:hover {
     background-color: var(--color-background-mute);
     transform: scale(1.1); /* 悬停时轻微放大 */
     transition: transform 0.2s ease, background-color 0.2s ease;
