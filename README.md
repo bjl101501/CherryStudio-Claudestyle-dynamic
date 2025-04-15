@@ -76,11 +76,6 @@ pre *, code *, kbd, samp, tt {
 	font-family: "Maple Mono NL CN", monospace !important;
 }
 
-/* 隐藏开始新对话 */
-.kwIEiN {   
-    display: none;    
-}
-
 /* 浅色模式颜色定义 - 采用Claude的色调 */
 body[theme-mode='light'] {
     --color-primary: #C96442;
