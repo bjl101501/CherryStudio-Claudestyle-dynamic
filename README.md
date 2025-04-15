@@ -21,8 +21,8 @@
   
     ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
 
-- 隐藏开始新对话  
-  版本v1.2.3 pre，其他版本不一定生效
+- ~~隐藏开始新对话~~  
+  ~~版本v1.2.3 pre，其他版本不一定生效~~  V1.2.4 版本已去除新对话按钮
   
   ```
   .kwIEiN {   
