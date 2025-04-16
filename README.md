@@ -20,37 +20,7 @@ https://github.com/user-attachments/assets/99fc8bc6-2a4a-4fcf-88be-1fe0e4b958a9
 [原始聊天文档](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/chat.md)  
 [零基础简易修改主题方法](https://github.com/bjl101501/CherryStudio-Claudestyle-dynamic/blob/main/dev.md)  
 
-### 相比原始聊天文档：
-- 修改按钮悬停样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
-  
-    ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
-
-- ~~隐藏开始新对话~~  
-  ~~版本v1.2.3 pre，其他版本不一定生效~~  V1.2.4 版本已去除新对话按钮
-  
-  ```
-  .kwIEiN {   
-      display: none;    
-  }    
-  ```
-  ![image](https://github.com/user-attachments/assets/1d30bd55-60a0-4b2a-9cea-0b6c2ed585a6)  
-
-  
-- 修改行内代码样式  
-    ```
-    .markdown * code {
-    	color: rgb(203,64,66);
-    	font-family: "Maple Mono NL CN", monospace !important;
-    	font-size: 12px
-    }
-    ```
-    ![image](https://github.com/user-attachments/assets/717016a7-7d54-460b-a3cf-8250faff42d1)  
-- 修改深色模式字体颜色
-- 修改输入框边框变色
-  
-  
-
---- 
+---
 **当前适配：Cherry Studio  < v1.2.4**
 ### CSS  
 ```css
@@ -298,3 +268,35 @@ body[theme-mode='dark'] #inputbar:focus-within {
     transform: scale(1.1); /* 悬停或焦点时放大 */
 }
 ```
+---
+### 相比原始聊天文档：
+- 修改按钮悬停样式`.ant-btn-primary:hover, .ant-btn-primary:focus`
+  
+    ![image](https://github.com/user-attachments/assets/1293ccd8-b2eb-4483-8882-ee1944ffe59b)
+
+- ~~隐藏开始新对话~~  
+  ~~版本v1.2.3 pre，其他版本不一定生效~~  V1.2.4 版本已去除新对话按钮
+  
+  ```
+  .kwIEiN {   
+      display: none;    
+  }    
+  ```
+  ![image](https://github.com/user-attachments/assets/1d30bd55-60a0-4b2a-9cea-0b6c2ed585a6)  
+
+  
+- 修改行内代码样式  
+    ```
+    .markdown * code {
+    	color: rgb(203,64,66);
+    	font-family: "Maple Mono NL CN", monospace !important;
+    	font-size: 12px
+    }
+    ```
+    ![image](https://github.com/user-attachments/assets/717016a7-7d54-460b-a3cf-8250faff42d1)  
+- 修改深色模式字体颜色
+- 修改输入框边框变色
+  
+  
+
+--- 
