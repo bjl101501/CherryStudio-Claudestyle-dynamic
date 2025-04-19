@@ -172,7 +172,6 @@ body[theme-mode='dark'] #inputbar {
     background: #30302E !important; /* 暗色模式下的输入框背景 */
     border: 1px solid var(--color-border) !important;
     box-shadow: 0 8px 32px -12px rgba(0,0,0,0.3) !important;
-    backdrop-filter: blur(8px) !important;
 }
 
 body[theme-mode='dark'] #inputbar:hover {
