@@ -189,16 +189,17 @@ body[theme-mode='dark'] #inputbar:focus-within {
 }
 
 /* Bug fixes */
-.bubble .message-user .message-action-button:hover {
+.bubble * .message-action-button:hover {
     background-color: var(--color-background-mute); /* 使用背景色变量修复悬停效果 */
     transform: scale(1.1); /* 悬停时轻微放大 */
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
-.GCzWs:hover {
-    background-color: var(--color-background-mute);
+body[theme-mode='dark'] .bubble * .message-action-button:hover {
+    background-color: var(--color-background-mute); /* 使用背景色变量修复悬停效果 */
     transform: scale(1.1); /* 悬停时轻微放大 */
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
 /* ======================== Ant Design 组件样式调整 - 添加动态效果 ======================== */
 /* 按钮样式 */
 .ant-btn-primary {
