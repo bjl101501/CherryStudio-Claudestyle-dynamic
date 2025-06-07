@@ -49,7 +49,7 @@ pre *, code *, kbd, samp, tt {
 }
 
 /* 浅色模式颜色定义 - 采用Claude的色调 */
-body[theme-mode='light'] {
+body[theme-mode=light] {
     --color-primary: #C96442 !important;
     --color-primary-soft: rgba(201, 100, 66, 0.6);
     --color-primary-mute: rgba(201, 100, 66, 0.2);
@@ -66,7 +66,7 @@ body[theme-mode='light'] {
 }
 
 /* 深色模式颜色定义 - 融合Claude深色主题 */
-body[theme-mode='dark'] {
+body[theme-mode=dark] {
     --color-primary: #C96442 !important;          /* 保持主色调一致 */
     --color-primary-soft: rgba(201, 100, 66, 0.6);
     --color-primary-mute: rgba(201, 100, 66, 0.2);
